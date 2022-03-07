@@ -9,7 +9,7 @@ const PostListItem = () => {
                 <button 
                 type="button"
                 className="btn-star btn-sm">
-                    <i className="fa fa-star"></i>
+                    <i class="Sfa fa-star"></i>
                 </button>
                 <button 
                 type="button"
