@@ -1,7 +1,7 @@
 import React from "react";
 import PostListItem from "../post-list-item";
 
-const PostList = () => {
+const PostList = ({posts}) => {
     return (
         <ul className="app-list list-group">
         <PostListItem label='Going to lern React' important/>

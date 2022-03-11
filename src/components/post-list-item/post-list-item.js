@@ -1,4 +1,5 @@
 import React from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 import { faTrashCan } from "@fortawesome/free-regular-svg-icons";
@@ -6,10 +7,14 @@ import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 const PostListItem = ({label, important=false}) => {
 
-let classNames 
+let classNames = 'app-list-item d-flex justify-content-between'
+
+if (important) {
+    classNames +=' important';
+}
 
     return (
-        <li className="app-list-item d-flex justify-content-between">
+        <li className={classNames}>
             <span className="app-list-item-lebel">
                 {label}
             </span>
