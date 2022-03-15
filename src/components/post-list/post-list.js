@@ -2,11 +2,21 @@ import React from "react";
 import PostListItem from "../post-list-item";
 
 const PostList = ({posts}) => {
+
+    const elements = posts.map((item) => {
+        return (
+            <li key={item.id} className='list-group-item'>
+                <PostListItem
+                label={item.label}
+                important={item.important} />
+
+            </li>
+        )
+    })
+
     return (
         <ul className="app-list list-group">
-        <PostListItem label='Going to lern React' important/>
-        <PostListItem label='That is so goog'/>
-        <PostListItem label='I need a break...'/>
+        {elements}
         </ul>
     )
 }
